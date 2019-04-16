@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Slide Contact Form - Demo Preview</title>
+<link href="css/formsidebar.css" rel="stylesheet"><!-- Include css file here-->
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'><!-- Including google font-->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery.min.js" type="text/javascript"></script>
+      <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#myModal").modal('show');
+        });
+</script>
+</head>
+<body>
+ <div id="myModal" class="modal fade" style="z-index:9999;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Enquiry Form</h4>
+            </div>
+            <div class="modal-body">
+				<p>Fill out this form to get quick response from our side.</p>
+                 <form id="Form1" onsubmit="javascript: return validation1();"  style="margin-left:50px;" >
+<div id="Div2">
+ 
+<table width="100%" cellpadding="2" cellspacing="2">
+<tr><td>&nbsp;</td></tr>
+<tr><td>Your Name</td><td><input type="text" id="Text1" name="Text1" class="form-control"   /></td></tr>
+ 	<tr><td>&nbsp;</td></tr>
+<tr><td>Mobile No.</td><td><input type="text" id="Text3" name="Text3" class="form-control" /></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td>Enquiry For</td><td> <select class="select" id="Select1" name="Select1" class="form-control">
+<option>Admission</option>
+    <option>Fee</option>
+    <option>Course</option>
+    <option>Jobs</option>
+  
+ 
+</select></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td valign="top">Query</td><td><textarea id="Textarea1" rows="3" name="Textarea1" class="form-control"> </textarea></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td></td><td ><input type="submit" id="submit1" value="Submit"  class="btn btn-primary"/></td></tr>
+</table>
+ 
+</div>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sliding div ends here -->
+</body>
+</html>
